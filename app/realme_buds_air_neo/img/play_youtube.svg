@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="63px" viewBox="0 0 63 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>p_03_ic_play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc_cos" transform="translate(-1249.000000, -1988.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="03-video" transform="translate(0.000000, 1629.000000)">
+                <g id="play" transform="translate(1249.000000, 359.000000)">
+                    <path d="M31.5,0 C48.8969696,0 63,14.1030304 63,31.5 C63,48.8969696 48.8969696,63 31.5,63 C14.1030304,63 0,48.8969696 0,31.5 C0,14.1030304 14.1030304,0 31.5,0 Z M31.5,2 C15.2075999,2 2,15.2075999 2,31.5 C2,47.7924001 15.2075999,61 31.5,61 C47.7924001,61 61,47.7924001 61,31.5 C61,15.2075999 47.7924001,2 31.5,2 Z M24,18.1744439 L44.8573921,31.5 L24,44.8255561 L24,18.1744439 Z M26,21.825 L26,41.174 L41.142,31.5 L26,21.825 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
