@@ -2002,8 +2002,8 @@ button.swiper-pagination-bullet {
       width: 175px;
       height: 399px;
       position: absolute;
-      top: 180px;
-      left: 600px;
+      top: 190px;
+      left: 570px;
       opacity: 0;
       -webkit-transform: rotateZ(-20deg);
       -ms-transform: rotate(-20deg);
@@ -2530,12 +2530,26 @@ button.swiper-pagination-bullet {
   background-position: top center
 }
 
+.sec-banner.sec-lazyload .sec-bg {
+  background-image: url(../img/bg-header.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: top center;
+  z-index: -1;
+}
+
 @media screen and (max-width: 768px) {
   .sec-points.sec-lazyload .sec-bg {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
     background-image: url(../img/bg_points_m.png)
+  }
+  .sec-banner.sec-lazyload .sec-bg {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-image: url(../img/bg_header_m.png)
   }
 }
 
@@ -2580,7 +2594,13 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 768px) {
   .sec-video span {
     font-size: .1rem;
-    top: 62%;
+    top: 58%;
+  }
+  .sec-video a.dialog-video-play {
+    left: 50%;
+    top: 42%;
+    -webkit-transform: translate3d(-50%, -42%, 0);
+    transform: translate3d(-50%, -42%, 0);
   }
 }
 
@@ -4405,6 +4425,9 @@ button.swiper-pagination-bullet {
     line-height: 32px;
     margin-top: 97px
   }
+  .sec-specs .sec-remarks .desc {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -4463,6 +4486,9 @@ button.swiper-pagination-bullet {
     color: #282828;
     line-height: .22rem;
     padding: .4rem 0
+  }
+  .sec-specs .sec-remarks .desc {
+    font-size: .12rem;
   }
 }
 
