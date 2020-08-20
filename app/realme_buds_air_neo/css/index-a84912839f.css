@@ -1829,7 +1829,7 @@ button.swiper-pagination-bullet {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
-    background-image: url(../img/text-buds.svg)
+    background-image: url(../img/buds.svg)
   }
 
   .sec-banner .bude-box .flagLeft {
@@ -1854,7 +1854,7 @@ button.swiper-pagination-bullet {
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: center center;
-      background-image: url(../img/text-air.svg)
+      background-image: url(../img/air.svg)
     }
 
   .sec-banner .bude-box .flagright {
@@ -1880,7 +1880,7 @@ button.swiper-pagination-bullet {
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: center center;
-      background-image: url(../img/text-neo.svg)
+      background-image: url(../img/neo.svg)
     }
 
   .sec-banner .bude-box .flagNeo {
@@ -2095,7 +2095,7 @@ button.swiper-pagination-bullet {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
-    background-image: url(../img/text-buds.svg);
+    background-image: url(../img/buds.svg);
     position: absolute;
     left: .2rem
   }
@@ -2123,7 +2123,7 @@ button.swiper-pagination-bullet {
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: center center;
-      background-image: url(../img/text-air.svg);
+      background-image: url(../img/air.svg);
       position: absolute;
       right: .1rem;
       top: 2.72rem
@@ -2154,7 +2154,7 @@ button.swiper-pagination-bullet {
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: center center;
-      background-image: url(../img/text-neo.svg)
+      background-image: url(../img/neo.svg)
     }
 
   .sec-banner .bude-box .flagNeo {
@@ -2584,23 +2584,13 @@ button.swiper-pagination-bullet {
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0)
 }
-.sec-video span {
-  position: absolute;
-  top: 57%;
-  font-size: 18px;
-  z-index: 2;
-}
 
 @media screen and (max-width: 768px) {
-  .sec-video span {
-    font-size: .1rem;
-    top: 58%;
-  }
   .sec-video a.dialog-video-play {
     left: 50%;
-    top: 42%;
-    -webkit-transform: translate3d(-50%, -42%, 0);
-    transform: translate3d(-50%, -42%, 0);
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
   }
 }
 
