@@ -2693,7 +2693,8 @@ button.swiper-pagination-bullet {
 
   .sec-visuals .sec-content {
     width: 574px;
-    padding: 337px 0 0 600px
+    padding: 337px 0 0 600px;
+    box-sizing: initial;
   }
 
   .sec-visuals .sec-content .sec-title {
@@ -3065,7 +3066,8 @@ button.swiper-pagination-bullet {
 
   .sec-fingertips .sec-content {
     width: 622px;
-    padding: 264px 0 0 600px
+    padding: 264px 0 0 600px;
+    box-sizing: initial;
   }
 
   .sec-fingertips .sec-content .sec-title {
@@ -3423,7 +3425,8 @@ button.swiper-pagination-bullet {
 
   .sec-battery .sec-content {
     width: 613px;
-    padding: 289px 0 0 600px
+    padding: 289px 0 0 600px;
+    box-sizing: initial;
   }
 
   .sec-battery .sec-content .sec-title {
@@ -4012,7 +4015,8 @@ button.swiper-pagination-bullet {
 
   .sec-lightweight .sec-content {
     width: 519px;
-    padding: 216px 0 0 651px
+    padding: 216px 0 0 651px;
+    box-sizing: initial;
   }
 
   .sec-lightweight .sec-content .sec-title {
