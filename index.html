@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page Configuration -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="no">
+    <meta name="full-screen" content="no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+    <!-- Page Configuration - end -->
+
+    <title>Chain's Curriculum Vitae</title>
+    <!-- SEO Configuration -->
+        <!-- Facebook -->
+    <meta property="og:title" content="Personal Portfolio">
+    <meta property="og:site_name" content="Portfolio">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:alt" content="">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="1200">
+        <!-- Twitter -->
+    <meta name="twitter:title" content="Personal Portfolio">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:domain" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:creator" content="@chain">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:image:alt" content="">
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:player" content="">
+    <meta name="twitter:player:width" content="800">
+    <meta name="twitter:player:height" content="600">
+    <!-- SEO Configuration - end -->
+
+    <!-- Font Configuration -->
+<!--    <link rel="preload" href="" as="font" type="font/ttf" crossorigin="">-->
+<!--    <link rel="preload" href="" as="font" type="font/ttf" crossorigin="">-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:800" rel="stylesheet">
+    <!-- Font Configuration - end -->
+
+    <!-- Style Configuration -->
+        <!-- Shout out: https://locomotivemtl.github.io/locomotive-scroll/ -->
+    <link rel="stylesheet" href="./assets/scss/vendors/locamotive-scroll.min.css">
+        <!-- Shout out: https://splitting.js.org/guide.html#what-is-splitting -->
+    <link rel="stylesheet" href="./assets/scss/vendors/splitting.css">
+    <link rel="stylesheet" href="./assets/scss/vendors/splitting-cells.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Style Configuration - end -->
+</head>
+<body data-scroll-container>
+<!-- Custom cursor -->
+<div id="cursor-dot-outline"></div>
+<div id="cursor-dot"></div>
+<!-- Custom cursor - end -->
+
+<!-- Loading screen -->
+<div id="loading">
+    <div class="loading-overlay" data-columns="2" data-rows="5">
+        <img src="./assets/images/bg-black.jpg" alt="background-all-black">
+    </div>
+    <p class="loading-title splitting--jog" data-splitting>Chớt tồ minutes...</p>
+</div>
+<!-- Loading screen - end -->
+
+<!-- Notice browser does not support -->
+<div id="browser-doesnt-support" data-scroll-section>
+    Apologize for your bad experience!<br/> Your browser does not support web components!
+</div>
+<!-- Notice browser does not support - end -->
+
+<css-doodle grid="6">
+    :doodle {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        grid-gap: 15px;
+    }
+
+    transition: all .4s ease;
+    border-top: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+    border-right: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+
+    :after {
+        content: \@hex(@rand(9632, 9687));
+        color: hsl(@rand(137.50deg, 360deg), 80%, 80%);
+    }
+
+    @random {
+        border-top: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+        border-left: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+        border-style: dashed;
+    }
+</css-doodle>
+
+<!-- ==== Header section ==== -->
+<header id="header" data-scroll-section>
+    <section class="container header_banner">
+        <h1 class="header_title">
+            I'm a <br/>
+            <span data-scroll data-scroll-speed="3">f</span>
+            <span data-scroll data-scroll-speed="2">r</span>
+            <span data-scroll data-scroll-speed="3">o</span>
+            <span data-scroll data-scroll-speed="2">n</span>
+            <span data-scroll data-scroll-speed="3">t</span>
+            <span data-scroll data-scroll-speed="2">-</span>
+            <span data-scroll data-scroll-speed="3">e</span>
+            <span data-scroll data-scroll-speed="2">n</span>
+            <span data-scroll data-scroll-speed="3">d</span> <br/>
+            developer
+        </h1>
+    </section>
+    <!-- Scroll down -->
+    <div id="scroll-down"><span class="arrow-down"></span></div>
+</header>
+
+<!-- ==== Content section ==== -->
+<main id="main" data-scroll-section>
+    <section id="sec-cv">
+        <div class="container cv-container">
+            <!-- Paper header -->
+            <div class="cv-header cv-layout">
+                <figure class="left">
+                    <img src="./assets/images/avatar.png" alt="avatar_portfolio">
+                </figure>
+                <div class="right">
+                   <div class="cv-header-title">
+                       <h3>Tin Nguyen</h3>
+                       <h5>Front-end developer</h5>
+                   </div>
+                </div>
+            </div>
+            <!-- Paper content -->
+            <div class="cv-layout">
+                <div class="left">
+                    <!-- Block: Contact -->
+                    <div class="block-item block-contact">
+                        <address class="block-item-contact">
+                            <a href="tel:0799186158">079 918 61 58</a>
+                            <i class="fas fa-phone"></i>
+                        </address>
+
+                        <address class="block-item-contact">
+                            <a href="mailto:ntrungtn@gmail.com">ntrungtn@gmail.com</a>
+                            <i class="fas fa-envelope"></i>
+                        </address>
+
+                        <address class="block-item-contact">
+                            <a href="https://github.com/TinNguyen98" target="_blank">TinNguyen98</a>
+                            <i class="fab fa-github"></i>
+                        </address>
+
+                        <div class="block-item-contact">
+                            <a class="splitting-zip download-cv"
+                               data-splitting
+                               target="_blank">
+                                Download cv
+                            </a>
+                            <i class="fas fa-cloud-download-alt"></i>
+                        </div>
+                    </div>
+                    <!-- Block: Education -->
+                    <article class="block-item block-education">
+                        <h4 class="block-item-title">Education</h4>
+                        <!-- Customize for mobile -->
+                        <div class="block-zone-col">
+                            <div class="block-item-zone">
+                                <h6>Student</h6>
+                                <p>Hutech university</p>
+                                <time>2017-2020</time>
+                            </div>
+                            <div class="block-item-zone">
+                                <h6>Student</h6>
+                                <p>Hutech university</p>
+                                <time>2017-2020</time>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Block: Skills -->
+                    <article class="block-item">
+                        <h4 class="block-item-title">Skills</h4>
+                        <h5 class="block-item-subtitle">Professional</h5>
+                        <ul class="block-item-list">
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                            <li>Javascript</li>
+                            <li>VueJS</li>
+                            <li>Time management</li>
+                            <li>Problem solving</li>
+                            <li>Communication</li>
+                            <li>Creativity</li>
+                            <li>Quick learner</li>
+                            <li>Happy smile</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="right">
+                    <!-- Block: Profile -->
+                    <article class="block-item">
+                        <h4 class="block-item-title">Profile</h4>
+                        <p class="block-item-context">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa earum exercitationem facere id mollitia quia sunt suscipit tempora. Aliquid dolorem eum fugiat nemo, sint suscipit temporibus vitae. Commodi, eos, inventore.
+                        </p>
+                    </article>
+                    <!-- Block: Experience -->
+                    <article class="block-item">
+                        <h4 class="block-item-title">Experience</h4>
+                        <!-- Milestone -->
+                        <div class="block-item-zone">
+                            <h5 class="block-item-subtitle">Internship</h5>
+                            <h6>Gumi Viet Nam_1 | 2019</h6>
+                            <ul class="block-item-list">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa earum exercitationem facere id mollitia quia sunt suscipit tempora. Aliquid dolorem eum fugiat nemo, sint suscipit temporibus vitae</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa earum exercitationem facere id mollitia quia sunt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa earum exercitationem facere id mollitia quia sunt</li>
+                            </ul>
+                        </div>
+                        <!-- Milestone -->
+                        <div class="block-item-zone">
+                            <h5 class="block-item-subtitle">Staff</h5>
+                            <h6>Gumi Viet Nam_2 | 2020</h6>
+                            <ul class="block-item-list">
+                                <li>Time management234234234324243243243242343242342342342342343243242423432423424</li>
+                                <li>Happy smile</li>
+                            </ul>
+                        </div>
+                        <!-- Milestone -->
+                        <div class="block-item-zone">
+                            <h5 class="block-item-subtitle">Staff</h5>
+                            <h6>Gumi Viet Nam_3 | 2021</h6>
+                            <ul class="block-item-list">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa earum exercitationem facere id mollitia quia sunt</li>
+                                <li>Problem solving</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa earum exercitationem facere id mollitia quia sunt suscipit tempora. Aliquid dolorem eum fugiat nemo, sint suscipit temporibus vitae</li>
+                                <li>Creativity</li>
+                                <li>Quick learner</li>
+                                <li>Happy smile</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <!-- Block: Sincerely -->
+                    <article class="block-item">
+                        <h4 class="block-item-title">Sincerely,</h4>
+                        <p class="block-item-context">Tin Nguyen</p>
+                        <p class="block-item-context">Front-end Developer</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ==== Footer section ==== -->
+<footer id="footer"></footer>
+
+<!--[if lt IE 8]>
+<p class="browser-upgrade">
+    You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a>
+    to improve your experience.
+</p>
+<![endif]-->
+
+<!-- Javascript Configuration -->
+    <!-- Shout out: https://locomotivemtl.github.io/locomotive-scroll/ -->
+<script src="./assets/js/vendors/locomotive-scroll.min.js"></script>
+    <!-- Shout out: https://splitting.js.org/guide.html#what-is-splitting -->
+<script src="./assets/js/vendors/splitting.min.js"></script>
+    <!-- Shout out: https://css-doodle.com/ -->
+<script src="./assets/js/vendors/css-doodle.min.js"></script>
+    <!-- Run library and app logic  -->
+<script src="./assets/js/plugins/locomotive-scroll.js" type="text/javascript"></script>
+<script src="./assets/js/plugins/splitting.js" type="text/javascript"></script>
+<script src="./assets/js/main.js" type="text/javascript"></script>
+<!-- Javascript Configuration - end -->
+</body>
+</html>
