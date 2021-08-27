@@ -283,7 +283,7 @@
         &:not(:last-child) {
           margin-bottom: 0.8vw;
           @media #{$info-ipad} {
-            margin-bottom: 0;
+            margin-bottom: 4vw;
           }
         }
         @media #{$info-ipad} {
@@ -323,21 +323,24 @@
         @media #{$info-ipad} {
           @include flex();
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
           flex-wrap: wrap;
-          row-gap: 4vw;
-          padding-top: 5.3vw;
+          padding: 5.3vw 0 1.5vw;
         }
       }
 
       &.block-education {
         @media #{$info-ipad} {
+          padding-bottom: 0;
+
           .block-zone-col {
             @include flex();
             justify-content: space-between;
             flex-wrap: wrap;
+
             .block-item-zone {
               flex-basis: calc((100% - 2vw) / 2);
+              margin-bottom: 5vw;
             }
           }
         }
