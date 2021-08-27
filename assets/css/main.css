@@ -5751,6 +5751,7 @@ p {
 @media only screen and (max-width : 768px) {
   #header .header_banner .header_title {
     font-size: 15vw;
+    margin-bottom: 15vw;
   }
 }
 #header .header_banner .header_title span {
