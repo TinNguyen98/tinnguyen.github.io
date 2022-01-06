@@ -6468,6 +6468,11 @@ p {
     justify-content: center;
   }
 }
+@media only screen and (max-width : 341px) {
+  #sec-cv .cv-container .block-item-contact {
+    flex-basis: calc((100% - 8vw) / 2);
+  }
+}
 #sec-cv .cv-container .block-item-contact i {
   color: #a4a4a4;
   margin-right: 0.7vw;

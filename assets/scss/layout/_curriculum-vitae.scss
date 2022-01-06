@@ -291,6 +291,9 @@
           flex-basis: calc((100% - 2vw) / 2);
           justify-content: center;
         }
+        @media #{$info-phone-small} {
+          flex-basis: calc((100% - 8vw) / 2);
+        }
 
         i {
           color: $cv-text;
