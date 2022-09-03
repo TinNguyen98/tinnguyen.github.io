@@ -13,7 +13,7 @@
     const $cursorOutline = document.querySelector('#cursor-dot-outline')
     const $downloadCV = document.querySelector('.download-cv')
     const $doodle = document.querySelector('css-doodle');
-    const $browserDoesntSupport = document.querySelector('#browser-doesnt-support');
+    const $browserDontSupport = document.querySelector('#browser-dont-support');
 
     // --- Constructor ---
     prefixBrowser();
@@ -38,7 +38,7 @@
 
         if (isEdge) {
             $doodle.style.display = 'none'
-            $browserDoesntSupport.style.display = 'block'
+            $browserDontSupport.style.display = 'block'
             return
         }
         // Listener Chrome, Safari, FireFox

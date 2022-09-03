@@ -234,8 +234,14 @@
         margin: 0;
         padding-left: 2vw;
         list-style: none;
+        &:not(:last-child) {
+          margin: 0 0 1vw;
+        }
         @media #{$info-ipad} {
           padding-left: 6vw;
+          &:not(:last-child) {
+            margin: 0 0 2.2vw;
+          }
         }
 
         li {
