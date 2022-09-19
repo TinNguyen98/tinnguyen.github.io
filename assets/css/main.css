@@ -5750,7 +5750,7 @@ p {
 }
 @media only screen and (max-width : 768px) {
   #header .header_banner .header_title {
-    font-size: 15vw;
+    font-size: 14.5vw;
     margin-bottom: 30vw;
   }
 }
@@ -6289,7 +6289,17 @@ p {
     text-align: center;
   }
 }
-#sec-cv .cv-container .cv-header .right h3::before {
+#sec-cv .cv-container .cv-header .right h3 {
+  font-size: 1vw;
+  color: #a4a4a4;
+}
+@media only screen and (max-width : 768px) {
+  #sec-cv .cv-container .cv-header .right h3 {
+    font-size: 4.4vw;
+    color: #737373;
+  }
+}
+#sec-cv .cv-container .cv-header .right h5:before {
   content: "";
   position: absolute;
   bottom: -2.2vw;
@@ -6298,18 +6308,8 @@ p {
   background-color: #606060;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .cv-header .right h3::before {
+  #sec-cv .cv-container .cv-header .right h5:before {
     content: none;
-  }
-}
-#sec-cv .cv-container .cv-header .right h5 {
-  font-size: 1vw;
-  color: #a4a4a4;
-}
-@media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .cv-header .right h5 {
-    font-size: 4.4vw;
-    color: #737373;
   }
 }
 #sec-cv .cv-container .block-item {

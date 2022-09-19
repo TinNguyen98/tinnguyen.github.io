@@ -131,7 +131,16 @@
           }
         }
 
-        h3::before {
+        h3 {
+          font-size: 1vw;
+          color: $cv-text;
+          @media #{$info-ipad} {
+            font-size: 4.4vw;
+            color: $cv-text-dark;
+          }
+        }
+
+        h5:before {
           content: '';
           position: absolute;
           bottom: -2.2vw;
@@ -140,15 +149,6 @@
           background-color: $cv-title;
           @media #{$info-ipad} {
             content: none;
-          }
-        }
-
-        h5 {
-          font-size: 1vw;
-          color: $cv-text;
-          @media #{$info-ipad} {
-            font-size: 4.4vw;
-            color: $cv-text-dark;
           }
         }
       }

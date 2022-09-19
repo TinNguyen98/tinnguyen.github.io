@@ -54,7 +54,7 @@
     }
 
     /**
-     * Setup the cursor according to each mouse event
+     * Set up the cursor according to each mouse event
      */
     function setupEventListeners() {
         // Anchor hovering
@@ -113,7 +113,7 @@
     /**
      * Listen event-(mouseover, mousedown) scale up cursor size
      *
-     * @param clickMouse
+     * @param clickMouse{boolean}
      */
     function toggleCursorSize(clickMouse = false) {
         if (clickMouse) {
@@ -128,7 +128,7 @@
     /**
      * Listen event mouse leave page for visible cursor or not
      *
-     * @param visibleMouse
+     * @param visibleMouse{boolean}
      */
     function toggleCursorVisibility(visibleMouse = true) {
         if (visibleMouse) {
