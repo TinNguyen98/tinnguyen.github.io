@@ -23,7 +23,7 @@
             $loadingScreen.style.display = 'none'
             createCursor();
         }, 1100)
-    }, 1500)
+    }, 2000)
 
     $downloadCV.addEventListener('mousedown', function () {
       html2canvas && html2canvas($paperCV).then((canvas) => {
