@@ -22,8 +22,8 @@
         setTimeout(() => {
             $loadingScreen.style.display = 'none'
             createCursor();
-        }, 1100)
-    }, 2000)
+        }, 1200)
+    }, 1500)
 
     $downloadCV.addEventListener('mousedown', function () {
       html2canvas && html2canvas($paperCV).then((canvas) => {
