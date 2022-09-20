@@ -6384,6 +6384,7 @@ p {
 }
 #sec-cv .cv-container .block-item-context {
   font-size: 1vw;
+  text-align: justify;
   color: #a4a4a4;
   margin: 0;
 }
@@ -6447,6 +6448,19 @@ p {
     font-size: 3.5vw;
     color: #737373;
     letter-spacing: 0.3vw;
+  }
+}
+#sec-cv .cv-container .block-item-list.project-list li label {
+  font-style: italic;
+}
+#sec-cv .cv-container .block-item-list.project-list li p {
+  margin-left: 0.25vw;
+  text-indent: 0.5vw;
+  text-align: justify;
+}
+@media only screen and (max-width : 768px) {
+  #sec-cv .cv-container .block-item-list.project-list li p {
+    text-indent: 2vw;
   }
 }
 #sec-cv .cv-container .block-item-contact {

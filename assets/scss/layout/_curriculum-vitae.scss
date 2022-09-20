@@ -222,6 +222,7 @@
 
       &-context {
         font-size: 1vw;
+        text-align: justify;
         color: $cv-text;
         margin: 0;
         @media #{$info-ipad} {
@@ -276,6 +277,23 @@
             font-size: 3.5vw;
             color: $cv-text-dark;
             letter-spacing: 0.3vw;
+          }
+        }
+
+        &.project-list {
+          li {
+            label {
+              font-style: italic;
+            }
+
+            p {
+              margin-left: 0.25vw;
+              text-indent: 0.5vw;
+              text-align: justify;
+              @media #{$info-ipad} {
+                text-indent: 2vw;
+              }
+            }
           }
         }
       }

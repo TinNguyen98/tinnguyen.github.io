@@ -1,5 +1,4 @@
 (function () {
-    // --- Customize cursor of page ---
     const cursor = {
         delay: 8,
         _x: 0,
@@ -12,6 +11,7 @@
     const $cursorDot = document.querySelector('#cursor-dot')
     const $cursorOutline = document.querySelector('#cursor-dot-outline')
     const $downloadCV = document.querySelector('.download-cv')
+    const $paperCV = document.querySelector('#sec-cv .cv-container')
     const $doodle = document.querySelector('css-doodle');
     const $browserDontSupport = document.querySelector('#browser-dont-support');
 
@@ -23,10 +23,15 @@
             $loadingScreen.style.display = 'none'
             createCursor();
         }, 1100)
-    }, 2000)
+    }, 1500)
 
     $downloadCV.addEventListener('mousedown', function () {
-        alert('Mới bản dummy anh bạn à chưa tải được! Quậy khum ._.')
+      html2canvas && html2canvas($paperCV).then((canvas) => {
+        let a = document.createElement("a");
+        a.download = "Chains_Curriculum_Vitae.jpg";
+        a.href = canvas.toDataURL("image/jpg");
+        a.click();
+      });
     })
     // --- Constructor - end ---
 
@@ -45,6 +50,7 @@
         window.addEventListener('click', () => $doodle.update());
     }
 
+    // --- Customize cursor of page ---
     function createCursor() {
         // Run only PC screen
         if (window.innerWidth > 768 && $loadingScreen.style.display === 'none') {
