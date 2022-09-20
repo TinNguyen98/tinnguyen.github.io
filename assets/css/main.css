@@ -6385,6 +6385,7 @@ p {
 #sec-cv .cv-container .block-item-context {
   font-size: 1vw;
   text-align: justify;
+  word-break: break-word;
   color: #a4a4a4;
   margin: 0;
 }
@@ -6457,6 +6458,7 @@ p {
   margin-left: 0.25vw;
   text-indent: 0.5vw;
   text-align: justify;
+  word-break: break-word;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-list.project-list li p {

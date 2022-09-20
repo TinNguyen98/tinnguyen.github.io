@@ -223,6 +223,7 @@
       &-context {
         font-size: 1vw;
         text-align: justify;
+        word-break: break-word;
         color: $cv-text;
         margin: 0;
         @media #{$info-ipad} {
@@ -290,6 +291,7 @@
               margin-left: 0.25vw;
               text-indent: 0.5vw;
               text-align: justify;
+              word-break: break-word;
               @media #{$info-ipad} {
                 text-indent: 2vw;
               }
