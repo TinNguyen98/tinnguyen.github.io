@@ -117,7 +117,7 @@
           background-color: transparent;
         }
 
-        h3, h5 {
+        h2, h3 {
           position: relative;
           font-size: 3vw;
           color: $cv-title;
@@ -131,7 +131,7 @@
           }
         }
 
-        h3 {
+        h2 {
           font-size: 1vw;
           color: $cv-text;
           @media #{$info-ipad} {
@@ -140,7 +140,7 @@
           }
         }
 
-        h5:before {
+        h3:before {
           content: '';
           position: absolute;
           bottom: -2.2vw;

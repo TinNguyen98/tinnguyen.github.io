@@ -6274,7 +6274,7 @@ p {
     background-color: transparent;
   }
 }
-#sec-cv .cv-container .cv-header .right h3, #sec-cv .cv-container .cv-header .right h5 {
+#sec-cv .cv-container .cv-header .right h2, #sec-cv .cv-container .cv-header .right h3 {
   position: relative;
   font-size: 3vw;
   color: #606060;
@@ -6283,23 +6283,23 @@ p {
   padding-right: 2vw;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .cv-header .right h3, #sec-cv .cv-container .cv-header .right h5 {
+  #sec-cv .cv-container .cv-header .right h2, #sec-cv .cv-container .cv-header .right h3 {
     font-size: 9vw;
     color: #a3a3a3;
     text-align: center;
   }
 }
-#sec-cv .cv-container .cv-header .right h3 {
+#sec-cv .cv-container .cv-header .right h2 {
   font-size: 1vw;
   color: #a4a4a4;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .cv-header .right h3 {
+  #sec-cv .cv-container .cv-header .right h2 {
     font-size: 4.4vw;
     color: #737373;
   }
 }
-#sec-cv .cv-container .cv-header .right h5:before {
+#sec-cv .cv-container .cv-header .right h3:before {
   content: "";
   position: absolute;
   bottom: -2.2vw;
@@ -6308,7 +6308,7 @@ p {
   background-color: #606060;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .cv-header .right h5:before {
+  #sec-cv .cv-container .cv-header .right h3:before {
     content: none;
   }
 }
