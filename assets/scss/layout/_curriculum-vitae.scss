@@ -182,7 +182,7 @@
         font-size: 1.2vw;
         font-weight: bold;
         color: $cv-text;
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin-bottom: 0.5vw;
         @media #{$info-ipad} {
           font-size: 3.8vw;
@@ -200,22 +200,23 @@
         }
 
         h6 {
-          font-size: 1vw;
+          font-size: 1.2vw;
           color: $cv-title;
+          margin-bottom: 0.2vw;
           @media #{$info-ipad} {
             font-size: 3.5vw;
             color: $cv-title-dark;
             margin-bottom: 1vw;
           }
         }
-        p, time {
+        p, small, time {
           font-size: 1vw;
           color: $cv-text;
           letter-spacing: 0.1vw;
           @media #{$info-ipad} {
             font-size: 3.5vw;
             color: $cv-text-dark;
-            letter-spacing: 0.3vw;
+            letter-spacing: 0.2vw;
           }
         }
       }
@@ -277,7 +278,7 @@
           @media #{$info-ipad} {
             font-size: 3.5vw;
             color: $cv-text-dark;
-            letter-spacing: 0.3vw;
+            letter-spacing: 0.2vw;
           }
         }
 
@@ -338,7 +339,7 @@
           letter-spacing: 0.1vw;
           @media #{$info-ipad} {
             color: $cv-text-dark;
-            letter-spacing: 0.3vw;
+            letter-spacing: 0.2vw;
           }
 
           &:hover ~ i {
@@ -359,6 +360,15 @@
       }
 
       &.block-education {
+        .block-education__school {
+          line-height: 1;
+        }
+        .block-education__major,
+        .block-education__period {
+          display: block;
+          text-transform: capitalize;
+        }
+
         @media #{$info-ipad} {
           padding-bottom: 0;
 

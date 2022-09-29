@@ -2,7 +2,6 @@ body {
   font-family: "Work Sans", sans-serif;
   color: $white;
   background-color: $primary-black;
-  word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -53,7 +52,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   line-height: 1.2;
-  letter-spacing: 0.3vw;
+  letter-spacing: 0.2vw;
   word-break: break-all;
 }
 
@@ -64,7 +63,7 @@ p {
   margin: 0;
   @media #{$info-ipad} {
     line-height: 1.5;
-    letter-spacing: 0.3vw;
+    letter-spacing: 0.2vw;
   }
 }
 

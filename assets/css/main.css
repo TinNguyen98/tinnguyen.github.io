@@ -5616,7 +5616,6 @@ body {
   font-family: "Work Sans", sans-serif;
   color: #ffffff;
   background-color: #333333;
-  word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -5670,7 +5669,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   line-height: 1.2;
-  letter-spacing: 0.3vw;
+  letter-spacing: 0.2vw;
   word-break: break-all;
 }
 
@@ -5683,7 +5682,7 @@ p {
 @media only screen and (max-width : 768px) {
   p {
     line-height: 1.5;
-    letter-spacing: 0.3vw;
+    letter-spacing: 0.2vw;
   }
 }
 
@@ -6188,7 +6187,7 @@ p {
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .cv-layout .left .block-item:last-child, #sec-cv .cv-container .cv-layout .right .block-item:last-child {
-    border-bottom: 0.1vw solid #a4a4a4;
+    border-bottom: 0.1vw solid #636363;
   }
 }
 #sec-cv .cv-container .cv-layout .right {
@@ -6291,12 +6290,12 @@ p {
 }
 #sec-cv .cv-container .cv-header .right h2 {
   font-size: 1vw;
-  color: #a4a4a4;
+  color: #636363;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .cv-header .right h2 {
     font-size: 4.4vw;
-    color: #737373;
+    color: #9b9999;
   }
 }
 #sec-cv .cv-container .cv-header .right h3:before {
@@ -6315,7 +6314,7 @@ p {
 #sec-cv .cv-container .block-item {
   margin-bottom: 2vw;
   padding-bottom: 2vw;
-  border-bottom: 0.1vw solid #a4a4a4;
+  border-bottom: 0.1vw solid #636363;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item {
@@ -6340,14 +6339,14 @@ p {
 #sec-cv .cv-container .block-item-subtitle {
   font-size: 1.2vw;
   font-weight: bold;
-  color: #a4a4a4;
-  text-transform: uppercase;
+  color: #636363;
+  text-transform: capitalize;
   margin-bottom: 0.5vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-subtitle {
     font-size: 3.8vw;
-    color: #737373;
+    color: #9b9999;
     margin-bottom: 1.5vw;
   }
 }
@@ -6360,8 +6359,9 @@ p {
   }
 }
 #sec-cv .cv-container .block-item-zone h6 {
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: #606060;
+  margin-bottom: 0.2vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-zone h6 {
@@ -6370,29 +6370,29 @@ p {
     margin-bottom: 1vw;
   }
 }
-#sec-cv .cv-container .block-item-zone p, #sec-cv .cv-container .block-item-zone time {
+#sec-cv .cv-container .block-item-zone p, #sec-cv .cv-container .block-item-zone small, #sec-cv .cv-container .block-item-zone time {
   font-size: 1vw;
-  color: #a4a4a4;
+  color: #636363;
   letter-spacing: 0.1vw;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .block-item-zone p, #sec-cv .cv-container .block-item-zone time {
+  #sec-cv .cv-container .block-item-zone p, #sec-cv .cv-container .block-item-zone small, #sec-cv .cv-container .block-item-zone time {
     font-size: 3.5vw;
-    color: #737373;
-    letter-spacing: 0.3vw;
+    color: #9b9999;
+    letter-spacing: 0.2vw;
   }
 }
 #sec-cv .cv-container .block-item-context {
   font-size: 1vw;
   text-align: justify;
   word-break: break-word;
-  color: #a4a4a4;
+  color: #636363;
   margin: 0;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-context {
     font-size: 3.5vw;
-    color: #737373;
+    color: #9b9999;
   }
 }
 #sec-cv .cv-container .block-item-list {
@@ -6414,7 +6414,7 @@ p {
 #sec-cv .cv-container .block-item-list li {
   font-size: 1vw;
   font-weight: normal;
-  color: #a4a4a4;
+  color: #636363;
   letter-spacing: 0.1vw;
   word-break: break-all;
   line-height: 1.3;
@@ -6447,8 +6447,8 @@ p {
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-list li {
     font-size: 3.5vw;
-    color: #737373;
-    letter-spacing: 0.3vw;
+    color: #9b9999;
+    letter-spacing: 0.2vw;
   }
 }
 #sec-cv .cv-container .block-item-list.project-list li label {
@@ -6496,7 +6496,7 @@ p {
   }
 }
 #sec-cv .cv-container .block-item-contact i {
-  color: #a4a4a4;
+  color: #636363;
   margin-right: 0.7vw;
   -webkit-transition: all 0.25s cubic-bezier(0.55, 0.1, 0.15, 0.95);
   -khtml-transition: all 0.25s cubic-bezier(0.55, 0.1, 0.15, 0.95);
@@ -6507,20 +6507,20 @@ p {
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-contact i {
-    color: #737373;
+    color: #9b9999;
     margin-right: 2vw;
   }
 }
 #sec-cv .cv-container .block-item-contact a {
   font-weight: normal;
   font-style: normal;
-  color: #a4a4a4;
+  color: #636363;
   letter-spacing: 0.1vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-contact a {
-    color: #737373;
-    letter-spacing: 0.3vw;
+    color: #9b9999;
+    letter-spacing: 0.2vw;
   }
 }
 #sec-cv .cv-container .block-item-contact a:hover ~ i {
@@ -6540,6 +6540,14 @@ p {
     flex-wrap: wrap;
     padding: 5.3vw 0 1.5vw;
   }
+}
+#sec-cv .cv-container .block-item.block-education .block-education__school {
+  line-height: 1;
+}
+#sec-cv .cv-container .block-item.block-education .block-education__major,
+#sec-cv .cv-container .block-item.block-education .block-education__period {
+  display: block;
+  text-transform: capitalize;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item.block-education {
@@ -6563,7 +6571,7 @@ p {
   color: #00C9B1 !important;
 }
 .download-cv .char {
-  color: #a4a4a4 !important;
+  color: #636363 !important;
 }
 
 html,
