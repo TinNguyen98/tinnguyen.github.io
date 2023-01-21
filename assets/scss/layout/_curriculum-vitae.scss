@@ -1,5 +1,5 @@
 #sec-cv {
-  padding: 5vw 0 7vw;
+  padding: 5vw 0;
   @media #{$info-ipad} {
     padding: 10vw 3vw;
   }
@@ -36,7 +36,7 @@
 
         .block-item:last-child {
           border-bottom: none;
-          padding-bottom: 5vw;
+          padding-bottom: 4.5vw;
           @media #{$info-ipad} {
             border-bottom: 0.1vw solid $cv-text;
           }
@@ -50,6 +50,7 @@
           background-color: transparent;
           .block-item:last-child {
             border-bottom: none;
+            margin-bottom: 0;
           }
         }
       }
@@ -126,6 +127,7 @@
           padding-right: 2vw;
           @media #{$info-ipad} {
             font-size: 9vw;
+            padding-right: 0;
             color: $cv-title-dark;
             text-align: center;
           }
@@ -135,7 +137,7 @@
           font-size: 1vw;
           color: $cv-text;
           @media #{$info-ipad} {
-            font-size: 4.4vw;
+            font-size: 4vw;
             color: $cv-text-dark;
           }
         }
@@ -213,11 +215,16 @@
           font-size: 1vw;
           color: $cv-text;
           letter-spacing: 0.1vw;
+          margin-bottom: 0.1vw;
           @media #{$info-ipad} {
             font-size: 3.5vw;
             color: $cv-text-dark;
             letter-spacing: 0.2vw;
           }
+        }
+
+        time {
+          margin: 0;
         }
       }
 
@@ -290,7 +297,7 @@
 
             p {
               margin-left: 0.25vw;
-              text-indent: 0.5vw;
+              text-indent: 0.6vw;
               text-align: justify;
               word-break: break-word;
               @media #{$info-ipad} {
@@ -346,6 +353,16 @@
             color: $blue-light;
           }
         }
+
+        &.download-cv {
+          @media #{$info-ipad} {
+            display: none;
+          }
+           a {
+             color: $blue-light !important;
+             .char { color: $cv-text !important }
+           }
+        }
       }
 
       &.block-contact {
@@ -387,10 +404,4 @@
     }
     // --- Block Item - end ---
   }
-}
-
-.download-cv {
-  color: $blue-light !important;
-
-  .char { color: $cv-text !important }
 }
