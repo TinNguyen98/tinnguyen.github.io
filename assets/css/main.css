@@ -6195,13 +6195,13 @@ p {
   flex-basis: 70%;
   background-color: #ffffff;
 }
+#sec-cv .cv-container .cv-layout .right .block-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .cv-layout .right {
     background-color: transparent;
-  }
-  #sec-cv .cv-container .cv-layout .right .block-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
   }
 }
 #sec-cv .cv-container .cv-header {
@@ -6305,7 +6305,7 @@ p {
   content: "";
   position: absolute;
   bottom: -2.2vw;
-  width: 4.6vw;
+  width: 3.842vw;
   height: 0.2vw;
   background-color: #606060;
 }
@@ -6387,7 +6387,13 @@ p {
   }
 }
 #sec-cv .cv-container .block-item-zone time {
+  font-size: 0.9vw;
   margin: 0;
+}
+@media only screen and (max-width : 768px) {
+  #sec-cv .cv-container .block-item-zone time {
+    font-size: 3.2vw;
+  }
 }
 #sec-cv .cv-container .block-item-context {
   font-size: 1vw;
