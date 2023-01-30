@@ -4,7 +4,7 @@
   <!-- Page Configuration -->
   <meta content="en" http-equiv="content-language">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google" content="notranslate" />
   <link rel="icon" href="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/favicon/favicon.ico" type="image/x-icon">
   <link rel="icon" href="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
@@ -43,6 +43,11 @@
   <link rel="stylesheet" href="./assets/css/plugin.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <!-- Style Configuration - end -->
+
+  <link rel="preload" href="./assets/js/vendors/locomotive-scroll.min.js" as="script">
+  <link rel="preload" href="./assets/js/vendors/splitting.min.js" as="script">
+  <link rel="preload" href="./assets/js/vendors/css-doodle.min.js" as="script">
+  <link rel="preload" href="./assets/js/vendors/html2canvas.min.js" as="script">
 </head>
 <body data-scroll-container>
 <!-- Custom cursor -->
@@ -92,7 +97,7 @@
 </css-doodle>
 
 <!-- Internal links -->
-<a hidden href="./index.html">homepage link</a>
+<a hidden href="./index.html" target="_self">homepage link</a>
 
 <!-- ==== Header section ==== -->
 <header id="header" data-scroll-section>
@@ -122,12 +127,12 @@
       <!-- Paper header -->
       <div class="cv-header cv-layout">
         <figure class="left">
-          <img src="./assets/images/avatar.jpg" alt="avatar_portfolio">
+          <img src="assets/images/avatar.webp" alt="avatar_portfolio">
         </figure>
         <div class="right">
           <div class="cv-header-title">
-            <h3>Tin Nguyen</h3>
-            <h2>Front-end developer</h2>
+            <h2>Tin Nguyen</h2>
+            <h3>Front-end developer</h3>
           </div>
         </div>
       </div>
@@ -138,37 +143,56 @@
           <!-- Block: Contact -->
           <div class="block-item block-contact">
             <address class="block-item-contact">
-              <a href="https://github.com/chainnguyen" target="_blank">chainnguyen</a>
+              <a class="contact-link"
+                 href="https://github.com/chainnguyen"
+                 target="_blank">
+                chainnguyen
+              </a>
               <i class="fab fa-github"></i>
             </address>
 
             <address class="block-item-contact">
-              <a href="https://www.linkedin.com/in/chain-nguyen/" target="_blank">Tin Nguyen (Chain)</a>
+              <a class="contact-link"
+                 href="https://www.linkedin.com/in/chain-nguyen/"
+                 target="_blank">
+                Tin Nguyen (Chain)
+              </a>
               <i class="fab fa-linkedin"></i>
             </address>
 
             <address class="block-item-contact">
-              <a href="https://codepen.io/chain-nguyen" target="_blank">Chain Nguyen</a>
+              <a class="contact-link"
+                 href="https://codepen.io/chain-nguyen"
+                 target="_blank">
+                Chain Nguyen
+              </a>
               <i class="fab fa-codepen"></i>
             </address>
 
             <address class="block-item-contact">
-              <a href="https://join.skype.com/invite/hdhmUevM7Cl0" target="_blank">live:ntrungtn</a>
+              <a class="contact-link"
+                 href="https://join.skype.com/invite/hdhmUevM7Cl0"
+                 target="_blank">
+                live:ntrungtn
+              </a>
               <i class="fab fa-skype"></i>
             </address>
 
             <address class="block-item-contact">
-              <a href="tel:0799186158">0799 18 6158</a>
+              <a class="contact-link" href="tel:0799186158">0799 18 6158</a>
               <i class="fas fa-phone"></i>
             </address>
 
             <address class="block-item-contact">
-              <a href="mailto:ntrungtn@gmail.com">ntrungtn@gmail.com</a>
+              <a class="contact-link"
+                 href="mailto:ntrungtn@gmail.com">
+                ntrungtn@gmail.com
+              </a>
               <i class="fas fa-envelope"></i>
             </address>
 
             <div class="block-item-contact download-cv">
-              <a href="javascript:void(0)">Download cv</a>
+              <span class="contact-link">Download cv</span>
               <i class="fas fa-cloud-download-alt"></i>
             </div>
           </div>
@@ -179,7 +203,7 @@
             <!-- Customize for mobile -->
             <div class="block-zone-col">
               <div class="block-item-zone">
-                <h6>Student</h6>
+                <h5>Student</h5>
                 <p class="block-education__school">HUTECH University</p>
                 <small class="block-education__major">Information Technology</small>
                 <time class="block-education__period">2017-2021</time>
@@ -325,7 +349,7 @@
 <!--[if lt IE 8]>
 <p class="browser-upgrade">
   You are using an <strong>outdated</strong> browser. Please
-  <a href="http://browsehappy.com/">upgrade your browser</a>
+  <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a>
   to improve your experience.
 </p>
 <![endif]-->

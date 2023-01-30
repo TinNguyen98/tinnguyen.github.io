@@ -133,7 +133,7 @@
           }
         }
 
-        h2 {
+        h3 {
           font-size: 1vw;
           color: $cv-text;
           @media #{$info-ipad} {
@@ -142,7 +142,7 @@
           }
         }
 
-        h3:before {
+        h2:before {
           content: '';
           position: absolute;
           bottom: -2.2vw;
@@ -201,7 +201,7 @@
           }
         }
 
-        h6 {
+        h5 {
           font-size: 1.2vw;
           color: $cv-title;
           margin-bottom: 0.2vw;
@@ -343,7 +343,7 @@
           }
         }
 
-        a {
+        .contact-link {
           font-weight: normal;
           font-style: normal;
           color: $cv-text;
@@ -362,7 +362,8 @@
           @media #{$info-ipad} {
             display: none;
           }
-           a {
+          .contact-link {
+             font-weight: bold;
              color: $blue-light !important;
              .char { color: $cv-text !important }
            }

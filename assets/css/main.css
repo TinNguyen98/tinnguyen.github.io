@@ -6291,17 +6291,17 @@ p {
     text-align: center;
   }
 }
-#sec-cv .cv-container .cv-header .right h2 {
+#sec-cv .cv-container .cv-header .right h3 {
   font-size: 1vw;
   color: #636363;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .cv-header .right h2 {
+  #sec-cv .cv-container .cv-header .right h3 {
     font-size: 4vw;
     color: #9b9999;
   }
 }
-#sec-cv .cv-container .cv-header .right h3:before {
+#sec-cv .cv-container .cv-header .right h2:before {
   content: "";
   position: absolute;
   bottom: -2.2vw;
@@ -6310,7 +6310,7 @@ p {
   background-color: #606060;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .cv-header .right h3:before {
+  #sec-cv .cv-container .cv-header .right h2:before {
     content: none;
   }
 }
@@ -6361,13 +6361,13 @@ p {
     margin-bottom: 5vw;
   }
 }
-#sec-cv .cv-container .block-item-zone h6 {
+#sec-cv .cv-container .block-item-zone h5 {
   font-size: 1.2vw;
   color: #606060;
   margin-bottom: 0.2vw;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .block-item-zone h6 {
+  #sec-cv .cv-container .block-item-zone h5 {
     font-size: 3.5vw;
     color: #a3a3a3;
     margin-bottom: 1vw;
@@ -6524,19 +6524,19 @@ p {
     margin-right: 2vw;
   }
 }
-#sec-cv .cv-container .block-item-contact a {
+#sec-cv .cv-container .block-item-contact .contact-link {
   font-weight: normal;
   font-style: normal;
   color: #636363;
   letter-spacing: 0.1vw;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .block-item-contact a {
+  #sec-cv .cv-container .block-item-contact .contact-link {
     color: #9b9999;
     letter-spacing: 0.2vw;
   }
 }
-#sec-cv .cv-container .block-item-contact a:hover ~ i {
+#sec-cv .cv-container .block-item-contact .contact-link:hover ~ i {
   color: #00C9B1;
 }
 @media only screen and (max-width : 768px) {
@@ -6544,10 +6544,11 @@ p {
     display: none;
   }
 }
-#sec-cv .cv-container .block-item-contact.download-cv a {
+#sec-cv .cv-container .block-item-contact.download-cv .contact-link {
+  font-weight: bold;
   color: #00C9B1 !important;
 }
-#sec-cv .cv-container .block-item-contact.download-cv a .char {
+#sec-cv .cv-container .block-item-contact.download-cv .contact-link .char {
   color: #636363 !important;
 }
 #sec-cv .cv-container .block-item.block-contact {
