@@ -6361,13 +6361,13 @@ p {
     margin-bottom: 5vw;
   }
 }
-#sec-cv .cv-container .block-item-zone h5 {
+#sec-cv .cv-container .block-item-zone__topic {
   font-size: 1.2vw;
   color: #606060;
   margin-bottom: 0.2vw;
 }
 @media only screen and (max-width : 768px) {
-  #sec-cv .cv-container .block-item-zone h5 {
+  #sec-cv .cv-container .block-item-zone__topic {
     font-size: 3.5vw;
     color: #a3a3a3;
     margin-bottom: 1vw;
