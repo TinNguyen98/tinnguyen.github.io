@@ -6600,9 +6600,9 @@ body * {
 }
 @media only screen and (max-width : 768px) {
   html,
-html *,
-body,
-body * {
+  html *,
+  body,
+  body * {
     cursor: default;
   }
 }
