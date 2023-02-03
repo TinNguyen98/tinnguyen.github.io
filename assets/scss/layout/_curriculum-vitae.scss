@@ -7,7 +7,7 @@
   .cv-container {
     width: 100%;
     height: auto;
-    max-width: 55vw;
+    max-width: 60vw;
     background-color: $white;
     border-radius: 0.4vw;
     overflow: hidden;
@@ -70,7 +70,7 @@
       .left {
         margin: 0;
         padding: 0 0 0.5px; // Fix space under image when cv scroll
-        flex-basis: 42.21%;
+        flex-basis: 41%;
         overflow: hidden;
         z-index: 2;
         &::before {
@@ -79,7 +79,7 @@
           right: 0;
           bottom: 0;
           border-bottom: 3vw solid $cv-primary;
-          border-left: 18.66vw solid transparent;
+          border-left: 24.66vw solid transparent;
           @media #{$info-ipad} {
             content: none;
           }
@@ -106,8 +106,8 @@
           position: absolute;
           right: 0;
           bottom: 0;
-          border-bottom: 8vw solid $white;
-          border-left: 58vw solid transparent;
+          border-bottom: 7.95vw solid $white;
+          border-left: 63.9vw solid transparent;
           @media #{$info-ipad} {
             content: none;
           }
@@ -125,6 +125,7 @@
           text-align: left;
           text-transform: uppercase;
           padding-right: 2vw;
+          word-break: break-word;
           @media #{$info-ipad} {
             font-size: 9vw;
             padding-right: 0;
@@ -146,7 +147,7 @@
           content: '';
           position: absolute;
           bottom: -2.2vw;
-          width: 3.842vw;
+          width: 3.36vw;
           height: 0.2vw;
           background-color: $cv-title;
           @media #{$info-ipad} {
@@ -172,7 +173,7 @@
         font-weight: bold;
         color: $cv-title;
         text-transform: uppercase;
-        margin-bottom: 1vw;
+        margin-bottom: 0.5vw;
         @media #{$info-ipad} {
           font-size: 4.4vw;
           color: $cv-title-dark;
@@ -184,8 +185,7 @@
         font-size: 1.2vw;
         font-weight: bold;
         color: $cv-text;
-        text-transform: capitalize;
-        margin-bottom: 0.5vw;
+        margin-bottom: 0.2vw;
         @media #{$info-ipad} {
           font-size: 3.8vw;
           color: $cv-text-dark;
@@ -195,14 +195,16 @@
 
       &-zone {
         &:not(:last-child) {
-          margin-bottom: 1.5vw;
+          margin-bottom: 1.2vw;
           @media #{$info-ipad} {
             margin-bottom: 5vw;
           }
         }
 
         &__topic {
-          font-size: 1.2vw;
+          font-size: 1vw;
+          font-weight: normal;
+          font-style: italic;
           color: $cv-title;
           margin-bottom: 0.2vw;
           @media #{$info-ipad} {
@@ -214,12 +216,10 @@
         p, small, time {
           font-size: 1vw;
           color: $cv-text;
-          letter-spacing: 0.1vw;
           margin-bottom: 0.1vw;
           @media #{$info-ipad} {
             font-size: 3.5vw;
             color: $cv-text-dark;
-            letter-spacing: 0.2vw;
           }
         }
 
@@ -262,13 +262,12 @@
           font-size: 1vw;
           font-weight: normal;
           color: $cv-text;
-          letter-spacing: 0.1vw;
-          word-break: break-all;
-          line-height: 1.3;
+          word-break: break-word;
+          line-height: 1.2;
           &:not(:last-child) {
             margin-bottom: 0.5vw;
             @media #{$info-ipad} {
-              margin-bottom: 1.5vw;
+              margin-bottom: 1vw;
             }
           }
           &::before {
@@ -289,16 +288,11 @@
           @media #{$info-ipad} {
             font-size: 3.5vw;
             color: $cv-text-dark;
-            letter-spacing: 0.2vw;
           }
         }
 
         &.project-list {
           li {
-            label {
-              font-style: italic;
-            }
-
             p {
               margin-left: 0.25vw;
               text-indent: 0.6vw;
@@ -317,9 +311,9 @@
         justify-content: flex-end;
         align-items: center;
         flex-direction: row-reverse;
-        font-size: 0.9vw;
+        font-size: 1vw;
         &:not(:last-child) {
-          margin-bottom: 0.8vw;
+          margin-bottom: 0.7vw;
           @media #{$info-ipad} {
             margin-bottom: 4vw;
           }
@@ -347,10 +341,8 @@
           font-weight: normal;
           font-style: normal;
           color: $cv-text;
-          letter-spacing: 0.1vw;
           @media #{$info-ipad} {
             color: $cv-text-dark;
-            letter-spacing: 0.2vw;
           }
 
           &:hover ~ i {
@@ -391,6 +383,10 @@
           text-transform: capitalize;
         }
 
+        .block-education__period {
+          font-style: italic;
+        }
+
         @media #{$info-ipad} {
           padding-bottom: 0;
 
@@ -402,6 +398,21 @@
             .block-item-zone {
               flex-basis: calc((100% - 2vw) / 2);
               margin-bottom: 5vw;
+            }
+          }
+        }
+      }
+
+      &.block-skill,
+      &.block-hobbies {
+        .block-item-list {
+          @media #{$info-ipad} {
+            @include flex();
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            li {
+              flex-basis: 50%;
             }
           }
         }

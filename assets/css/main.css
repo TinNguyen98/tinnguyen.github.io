@@ -5613,7 +5613,7 @@ readers do not read off random characters that represent icons */
 /* ===================== IMPORT FONT APP ========================== */
 /* ===================== END IMPORT FONT APP ========================== */
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
   color: #ffffff;
   background-color: #333333;
   -ms-text-size-adjust: 100%;
@@ -5670,20 +5670,17 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   line-height: 1.2;
-  letter-spacing: 0.1vw;
   word-break: break-all;
 }
 
 p {
   word-break: break-all;
-  line-height: 1.3;
-  letter-spacing: 0.1vw;
+  line-height: 1.2;
   margin: 0;
 }
 @media only screen and (max-width : 768px) {
   p {
-    line-height: 1.5;
-    letter-spacing: 0.2vw;
+    line-height: 1.3;
   }
 }
 
@@ -5757,11 +5754,11 @@ p {
 #header .header_banner .header_title span {
   display: inline-block;
   color: #00C9B1;
-  letter-spacing: -1.7vw;
+  letter-spacing: -1.17vw;
 }
 @media only screen and (max-width : 768px) {
   #header .header_banner .header_title span {
-    letter-spacing: -4.5vw;
+    letter-spacing: -3vw;
   }
 }
 
@@ -6146,7 +6143,7 @@ p {
 #sec-cv .cv-container {
   width: 100%;
   height: auto;
-  max-width: 55vw;
+  max-width: 60vw;
   background-color: #ffffff;
   border-radius: 0.4vw;
   overflow: hidden;
@@ -6218,7 +6215,7 @@ p {
 #sec-cv .cv-container .cv-header .left {
   margin: 0;
   padding: 0 0 0.5px;
-  flex-basis: 42.21%;
+  flex-basis: 41%;
   overflow: hidden;
   z-index: 2;
 }
@@ -6228,7 +6225,7 @@ p {
   right: 0;
   bottom: 0;
   border-bottom: 3vw solid #f2f2f2;
-  border-left: 18.66vw solid transparent;
+  border-left: 24.66vw solid transparent;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .cv-header .left::before {
@@ -6260,8 +6257,8 @@ p {
   position: absolute;
   right: 0;
   bottom: 0;
-  border-bottom: 8vw solid #ffffff;
-  border-left: 58vw solid transparent;
+  border-bottom: 7.95vw solid #ffffff;
+  border-left: 63.9vw solid transparent;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .cv-header .right::before {
@@ -6282,6 +6279,7 @@ p {
   text-align: left;
   text-transform: uppercase;
   padding-right: 2vw;
+  word-break: break-word;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .cv-header .right h2, #sec-cv .cv-container .cv-header .right h3 {
@@ -6305,7 +6303,7 @@ p {
   content: "";
   position: absolute;
   bottom: -2.2vw;
-  width: 3.842vw;
+  width: 3.36vw;
   height: 0.2vw;
   background-color: #606060;
 }
@@ -6330,7 +6328,7 @@ p {
   font-weight: bold;
   color: #606060;
   text-transform: uppercase;
-  margin-bottom: 1vw;
+  margin-bottom: 0.5vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-title {
@@ -6343,8 +6341,7 @@ p {
   font-size: 1.2vw;
   font-weight: bold;
   color: #636363;
-  text-transform: capitalize;
-  margin-bottom: 0.5vw;
+  margin-bottom: 0.2vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-subtitle {
@@ -6354,7 +6351,7 @@ p {
   }
 }
 #sec-cv .cv-container .block-item-zone:not(:last-child) {
-  margin-bottom: 1.5vw;
+  margin-bottom: 1.2vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-zone:not(:last-child) {
@@ -6362,7 +6359,9 @@ p {
   }
 }
 #sec-cv .cv-container .block-item-zone__topic {
-  font-size: 1.2vw;
+  font-size: 1vw;
+  font-weight: normal;
+  font-style: italic;
   color: #606060;
   margin-bottom: 0.2vw;
 }
@@ -6376,14 +6375,12 @@ p {
 #sec-cv .cv-container .block-item-zone p, #sec-cv .cv-container .block-item-zone small, #sec-cv .cv-container .block-item-zone time {
   font-size: 1vw;
   color: #636363;
-  letter-spacing: 0.1vw;
   margin-bottom: 0.1vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-zone p, #sec-cv .cv-container .block-item-zone small, #sec-cv .cv-container .block-item-zone time {
     font-size: 3.5vw;
     color: #9b9999;
-    letter-spacing: 0.2vw;
   }
 }
 #sec-cv .cv-container .block-item-zone time {
@@ -6428,16 +6425,15 @@ p {
   font-size: 1vw;
   font-weight: normal;
   color: #636363;
-  letter-spacing: 0.1vw;
-  word-break: break-all;
-  line-height: 1.3;
+  word-break: break-word;
+  line-height: 1.2;
 }
 #sec-cv .cv-container .block-item-list li:not(:last-child) {
   margin-bottom: 0.5vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-list li:not(:last-child) {
-    margin-bottom: 1.5vw;
+    margin-bottom: 1vw;
   }
 }
 #sec-cv .cv-container .block-item-list li::before {
@@ -6461,11 +6457,7 @@ p {
   #sec-cv .cv-container .block-item-list li {
     font-size: 3.5vw;
     color: #9b9999;
-    letter-spacing: 0.2vw;
   }
-}
-#sec-cv .cv-container .block-item-list.project-list li label {
-  font-style: italic;
 }
 #sec-cv .cv-container .block-item-list.project-list li p {
   margin-left: 0.25vw;
@@ -6486,10 +6478,10 @@ p {
   justify-content: flex-end;
   align-items: center;
   flex-direction: row-reverse;
-  font-size: 0.9vw;
+  font-size: 1vw;
 }
 #sec-cv .cv-container .block-item-contact:not(:last-child) {
-  margin-bottom: 0.8vw;
+  margin-bottom: 0.7vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-contact:not(:last-child) {
@@ -6528,12 +6520,10 @@ p {
   font-weight: normal;
   font-style: normal;
   color: #636363;
-  letter-spacing: 0.1vw;
 }
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item-contact .contact-link {
     color: #9b9999;
-    letter-spacing: 0.2vw;
   }
 }
 #sec-cv .cv-container .block-item-contact .contact-link:hover ~ i {
@@ -6574,6 +6564,9 @@ p {
   display: block;
   text-transform: capitalize;
 }
+#sec-cv .cv-container .block-item.block-education .block-education__period {
+  font-style: italic;
+}
 @media only screen and (max-width : 768px) {
   #sec-cv .cv-container .block-item.block-education {
     padding-bottom: 0;
@@ -6589,6 +6582,19 @@ p {
   #sec-cv .cv-container .block-item.block-education .block-zone-col .block-item-zone {
     flex-basis: calc((100% - 2vw) / 2);
     margin-bottom: 5vw;
+  }
+}
+@media only screen and (max-width : 768px) {
+  #sec-cv .cv-container .block-item.block-skill .block-item-list, #sec-cv .cv-container .block-item.block-hobbies .block-item-list {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #sec-cv .cv-container .block-item.block-skill .block-item-list li, #sec-cv .cv-container .block-item.block-hobbies .block-item-list li {
+    flex-basis: 50%;
   }
 }
 
