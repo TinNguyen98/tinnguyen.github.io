@@ -29,12 +29,11 @@
   $downloadCV.addEventListener('mousedown', function () {
     html2canvas && html2canvas($paperCV).then((canvas) => {
       let a = document.createElement("a");
-      a.download = "Chain_Frontend_3years_CV.jpg";
+      a.download = "Chain_Nguyen_Frontend_CV.jpg";
       a.href = canvas.toDataURL("image/jpg");
       a.click();
     });
   })
-
   // --- Constructor - end ---
 
   function prefixBrowser() {
