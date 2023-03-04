@@ -137,6 +137,7 @@
         h3 {
           font-size: 1vw;
           color: $cv-text;
+          //text-transform: capitalize;
           @media #{$info-ipad} {
             font-size: 4vw;
             color: $cv-text-dark;
